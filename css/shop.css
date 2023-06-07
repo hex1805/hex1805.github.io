@@ -1,0 +1,73 @@
+/* Styles for shop page */
+
+.page {
+    justify-content: left;
+}
+
+.welcome-text {
+    padding: 20px;
+    width:100%;
+}
+
+.shop-banner {
+    height: 180px;
+    background-image: url(../images/redbanner.bmp);
+    margin-top: 30px;
+    display: flex;
+    width:1200px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.shop-banner > :first-child {
+    color: white;
+}
+
+.shop-banner > img {
+    height: 100%;
+}
+
+.filters {
+    margin-left: 20px;
+}
+.products {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
+.products > .panel {
+    max-width:300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+    border-radius: 0.6em;
+    transition: 0.5s; 
+}
+
+.panel:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    transition: 0.7s;
+}
+
+.products > .panel img {
+    max-width: 100%;
+}
+
+a:link, a:visited {
+    color: var(--text-dark);
+}
+
+.price {
+    color: var(--text-green);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

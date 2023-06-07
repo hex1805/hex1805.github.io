@@ -1,0 +1,102 @@
+.page {
+    display:flex;
+    justify-content:flex-start;
+    
+}
+
+.cart-text {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.product {
+    max-width:40%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 0.6em;
+    transition: 0.5s; 
+    height: 100%;
+}
+
+.product img {
+    width:100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.product > div {
+    padding-left:30px;
+}
+
+.product-name {
+    font-size: 2em;
+    height:2em;
+    margin-top:0.2em;
+}
+
+
+.price {
+    font-size: 2em;
+    padding:10px;
+    text-align: right;
+    margin-top:4em;
+}
+
+.card {
+    margin-left: 7em;
+    background-image: linear-gradient(#4290ad, #32a3ac);
+    background-color: #32a3ac;
+    border-radius: 2em;
+    width:40%;
+    color: white;
+    padding: 20px 25px;
+}
+
+.card h3 {
+    margin-top:0;
+}
+
+
+.heading-text {
+    margin-top:20px;
+}
+
+input {
+    margin-top:10px;
+    color: white;
+    background-color: rgba(9,77,92,0.2);
+    border:0;
+    padding:0.5em;
+    border-radius: 0.5em;
+    width:90%;
+    font-size: 1em;
+}
+
+/* Positioning exp date and ccv */
+
+.date, .ccv {
+    width: 40%;
+}
+
+.heading-text:nth-of-type(4), .ccv{
+    position: relative;
+    top: -89px;
+    left: 250px;
+}
+
+.card .btn {
+    background-color: #38c3d5;
+    width: 90%;
+    margin-left: 8px;
+    border-radius: 0.8em;
+    height: 1.7em;
+    padding-top:35px;
+}
+
+.card a:link, .card a:visited {
+    color:white;
+    font-family: var(--font-primary);
+    font-size: 28pt;
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;700&display=swap');
+
+/* Basic style for all pages */
+/* Contains: main, navbar, footer, typography, btn, cluster */
+
+:root {
+    --text-dark: #1c1b1b;
+    --text-black: black;
+    --text-green: #2b9421;
+    --font-primary: "Maven Pro", "sans-serif";
+    --font-secondary: "Raleway", "sans-serif";
+    --font-tertiary: "Nunito Sans", "sans-serif";
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #f8f8f8;
+}
+
+.page {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top: 60px;
+}
+
+/* Navbar header */
+
+nav {
+    background-color: rgb(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: var(--font-tertiary);
+    font-size: 14pt;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: ease-in-out 0.2s;
+}
+
+.btn:hover {
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
+}
+
+.logo {
+    padding:1em;
+}
+
+/* Typography */
+
+h2 {
+    font-family: var(--font-primary);
+    font-size: 36pt;
+    font-weight: 500;
+    margin-top: 0;
+    color: var(--text-dark);
+}
+
+.best-sellers > h2 {
+    color: var(--text-green);
+}
+
+h3 {
+    font-family: var(--font-primary);
+    font-size: 26pt;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: var(--font-tertiary);
+    font-size: 17pt;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 17pt;
+    margin-top: 15px;
+}
+
+p {
+    font-family: var(--font-secondary);
+    line-height: normal;
+    display: inline;
+    vertical-align: baseline;
+}
+
+/* Footer */
+
+footer {
+    background-color: #313131;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 60px 20px 40px;
+}
+
+footer > .logo img {
+    height: 80px;
+}
+
+.footer-text {
+    font-family: var(--font-secondary);
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    line-height: 200%;
+}
+
+footer a:link, footer a:visited {
+    color:#fff;
+}
