@@ -10,7 +10,7 @@
 body {
     color:lavenderblush;
     background-color:#05000a;
-    font: "Open Sans", sans-serif;
+    font-family: "Open Sans", "sans-serif";
 }
 
 nav {
@@ -20,12 +20,20 @@ nav {
 nav a {
     text-decoration: none;
     color:lavenderblush;
+    padding: 10px;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {
     display: inline;
 }
+
+li a:hover {
+    font-weight: bold;
+}
+
