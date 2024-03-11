@@ -10,26 +10,84 @@
 body {
     color:lavenderblush;
     background-color:#05000a;
+    background-image: url("media/starsbg.mp4");
     font-family: "Open Sans", "sans-serif";
+    
+    cursor:url("media/star.png"), move;
 }
 
-.blob a{
-    text-decoration: none;
-    color:lavenderblush;
-    padding: 10px;
-}
-
-.blob a:hover {
-    font-weight: bold;
+video {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: max-content;
+    height:max-content;
+    z-index: -1;
 }
 
 .blob {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:indigo;
-    height: 50vh;
-    width: 50vh;
+    height: 40vh;
+    width: 40vh;
     border-radius: 50vh;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgb(5, 0, 10, 0.7);
 }
 
+.blob {
+    text-decoration: none;
+    color:lavenderblush;
+    padding: 10px;
+}
+
+#homeblob {
+    background-image: url("media/orbred.png");
+    background-size: 100%;
+    position:relative;
+    top:5vh;
+    left: 40vh;
+}
+
+#workbookblob {
+    background-image: url("media/orbblue.png");
+    background-size: 100%;
+    position:relative;
+    top:-20vh;
+    left: 120vh;
+}
+
+#waypostsblob {
+    background-image: url("media/orbyellow.png");
+    background-size: 100%;
+    position:relative;
+    top:-30vh;
+    left: 75vh;
+}
+
+/* custom cursor animation from GDES30008 code snippets*/
+.blob:hover {
+    animation: gif 0.4s infinite;
+    }
+    /* the animation */
+    @keyframes gif {
+    0% {
+    cursor: url("media/star.png"), auto;
+    }
+    20% {
+    cursor: url("media/star1.png"), auto;
+    }
+    40% {
+    cursor: url("media/star2.png"), auto;
+    }
+    60% {
+    cursor: url("media/star3.png"), auto;
+    }
+    80% {
+    cursor: url("media/star2.png"), auto;
+    }
+    100% {
+    cursor: url("media/star1.png"), auto;
+    }
+    }
