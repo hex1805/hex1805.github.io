@@ -1,0 +1,20 @@
+body {
+    overflow-x: scroll;
+
+}
+
+.weeks {
+    display:flex;
+    white-space: nowrap;
+}
+.week {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    min-width: 60vh;
+    border-radius: 50vh;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgb(5, 0, 10, 0.7);
+    background-color: darkviolet;
+}
