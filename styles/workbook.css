@@ -1,16 +1,16 @@
 body {
     overflow-x: scroll;
-
 }
 
 .weeks {
     display:flex;
     white-space: nowrap;
 }
+
 .week {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:end;
     min-height: 60vh;
     min-width: 60vh;
     border-radius: 50vh;
