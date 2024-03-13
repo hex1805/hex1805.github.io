@@ -42,7 +42,7 @@ video {
     padding: 10px;
 }
 
-#homeblob {
+#progressblob {
     background-image: url("media/orbred.png");
     background-size: 100%;
     position:relative;
@@ -50,7 +50,7 @@ video {
     left: 40vh;
 }
 
-#workbookblob {
+#interactblob {
     background-image: url("media/orbblue.png");
     background-size: 100%;
     position:relative;

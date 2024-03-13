@@ -10,17 +10,44 @@ body {
 .week {
     display: flex;
     justify-content: center;
-    align-items:end;
     min-height: 60vh;
     min-width: 60vh;
     border-radius: 50vh;
-    font-size: 2em;
     margin-right: 20vh;
-    text-shadow: 2px 2px 2px rgb(5, 0, 10, 0.7);
     background-color: darkviolet;
 }
 
 .week>h3 {
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgb(5, 0, 10, 0.7);
     position: relative;
-    top: 10vh;
+    top: 60vh;
+    justify-self: center;
+}
+
+.week>p {
+    /*visibility: hidden;*/
+    position: relative;
+    top:10vh;
+    left: 5vh;
+    text-wrap:balance;
+    max-width: 70%;
+}
+
+.week:hover {
+    
+}
+
+#week1 {
+    background-image: url("../media/IW1.jpeg");
+    background-size: 100%;
+}
+
+#week1:hover {
+    filter:opacity(50);
+}
+
+#week2 {
+    background-image: url("../media/IW2.jpeg");
+    background-size: 100%;
 }
