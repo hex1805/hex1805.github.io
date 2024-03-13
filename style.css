@@ -12,7 +12,7 @@ body {
     background-color:#05000a;
     background-image: url("media/starsbg.mp4");
     font-family: "Open Sans", "sans-serif";
-    
+    overflow:hidden;
     cursor:url("media/star.png"), move;
 }
 
