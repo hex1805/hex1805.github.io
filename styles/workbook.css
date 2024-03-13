@@ -15,6 +15,7 @@ body {
     min-width: 60vh;
     border-radius: 50vh;
     font-size: 2em;
+    margin-right: 20vh;
     text-shadow: 2px 2px 2px rgb(5, 0, 10, 0.7);
     background-color: darkviolet;
 }
