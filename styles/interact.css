@@ -4,12 +4,12 @@ body {
 
 .weeks {
     display:flex;
-    white-space: nowrap;
+    
 }
 
 .week {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     min-height: 60vh;
     min-width: 60vh;
     border-radius: 50vh;
@@ -20,32 +20,40 @@ body {
 .week>h3 {
     font-size: 2em;
     text-shadow: 2px 2px 2px rgb(5, 0, 10, 0.7);
-    position: relative;
-    top: 60vh;
-    justify-self: center;
-}
-
-.week>p {
-    /*visibility: hidden;*/
-    position: relative;
-    top:10vh;
-    left: 5vh;
-    text-wrap:balance;
-    max-width: 70%;
-}
-
-.week:hover {
     
+    justify-content: center;
 }
 
-#week1 {
+.overlay {
+    background-color: rgb(5, 0, 10, 0.9);
+    opacity: 0;
+    transition: .5s ease-in-out;
+    width: 101%;
+    border-radius: 60vh;
+    position: relative;
+    left: -60vh;
+}
+
+.week:hover .overlay {
+    opacity: 1;
+    border-radius: 60vh;
+}
+
+.text {
+    position: relative;
+    margin-top: 20vh;
+    max-width: 60vh;
+}
+
+.image {
+    width: 60vh;
+    border-radius: 60vh;
+}
+
+/*#week1 {
     background-image: url("../media/IW1.jpeg");
     background-size: 100%;
-}
-
-#week1:hover {
-    filter:opacity(50);
-}
+}*/
 
 #week2 {
     background-image: url("../media/IW2.jpeg");
