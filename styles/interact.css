@@ -12,6 +12,7 @@ body {
     /*justify-content: center;*/
     min-height: 60vh;
     min-width: 60vh;
+
     border-radius: 50vh;
     margin-right: 20vh;
     background-color: darkviolet;
@@ -55,9 +56,9 @@ body {
 /*#week1 {
     background-image: url("../media/IW1.jpeg");
     background-size: 100%;
-}*/
+}
 
 #week2 {
     background-image: url("../media/IW2.jpeg");
     background-size: 100%;
-}
+}*/
