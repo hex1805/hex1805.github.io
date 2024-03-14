@@ -45,7 +45,11 @@ body {
 .text {
     position: relative;
     margin-top: 20vh;
-    
+    overflow-wrap: normal;
+    white-space:normal;
+    margin-left: 5vh; 
+    margin-right: 5vh;
+    text-align: center;
 }
 
 .image {
