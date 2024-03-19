@@ -2,14 +2,44 @@ body {
     overflow: scroll;;
 }
 
-.images {
-    display: flex;
-    justify-content: space-around;
-    
-}
+/* external css: flickity.css */
 
-.images > img{
-    max-width: 60vw;
-    height: fit-content;
-}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .slides {
+    background: #05000a;
+  }
+  
+  .cell {
+    width: 66%;
+    height: 60vh;
+    margin-right: 10px;
+  }
 
+  #cell1 {
+    background-image: url("../media/P1.png");
+    background-size: 100%;
+  }
+
+  #cell2 {
+    background-image: url("../media/P2.png");
+    background-size: 100%;
+  }
+
+  #cell3 {
+    background-image: url("../media/P3.png");
+    background-size: 100%;
+  }
+
+  #cell4 {
+    background-image: url("../media/P4.png");
+    background-size: 100%;
+  }
+
+  #cell5 {
+    background-image: url("../media/P5.png");
+    background-size: 100%;
+  }
