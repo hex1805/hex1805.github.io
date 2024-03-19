@@ -36,31 +36,10 @@ video {
     text-decoration: none;
     color:lavenderblush;
     padding: 10px;
-    animation: MoveAround 6s ease-in-out infinite;
+    
 }
 
-/* Animation to make blobs move around */
-@keyframes MoveAround {
-    0%, 100% {
-        transform: translateY(0);
-        transform: translateX(0);
-    }
 
-    20% {
-        transform: translateX(0.5vh);
-        transform: translateY(-0.5vh); 
-    }
-
-    40% {
-        transform: translateX(-0.5vh);
-        transform: translateY(-0.5vh);
-    }
-
-    80% {
-        transform: translateY(-0.5vh);
-        transform: translateX(0.5vh);
-    }
-}
 
 #progressblob {
     background-image: url("media/orbred.png");
@@ -68,6 +47,7 @@ video {
     position:relative;
     top:5vh;
     left: 40vh;
+    animation: MoveAround1 6s ease-in-out infinite;
 }
 
 #interactblob {
@@ -76,6 +56,7 @@ video {
     position:relative;
     top:-20vh;
     left: 120vh;
+    animation: MoveAround2 6s ease-in-out infinite;
 }
 
 #waypostsblob {
@@ -84,6 +65,7 @@ video {
     position:relative;
     top:-30vh;
     left: 75vh;
+    animation: MoveAround3 6s ease-in-out infinite;
 }
 
 /* custom cursor animation from GDES30008 code snippets*/
@@ -110,4 +92,70 @@ video {
     100% {
     cursor: url("media/star1.png"), auto;
     }
+    }
+
+    /* Animation to make blobs move around */
+    @keyframes MoveAround1 {
+        0%, 100% {
+            transform: translateY(0);
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(0.5vh);
+            transform: translateY(-0.5vh); 
+        }
+
+        45% {
+            transform: translateX(-0.5vh);
+            transform: translateY(-0.5vh);
+        }
+
+        85% {
+            transform: translateY(-0.5vh);
+            transform: translateX(0.5vh);
+        }
+    }
+
+    @keyframes MoveAround2 {
+        0%, 100% {
+            transform: translateY(0);
+            transform: translateX(0);
+        }
+    
+        20% {
+            transform: translateX(-0.5vh);
+            transform: translateY(0.5vh); 
+        }
+    
+        40% {
+            transform: translateX(0.5vh);
+            transform: translateY(0.5vh);
+        }
+    
+        80% {
+            transform: translateY(0.5vh);
+            transform: translateX(-0.5vh);
+        }
+        }
+
+    @keyframes MoveAround3 {
+        0%, 100% {
+            transform: translateY(0);
+            transform: translateX(0);
+        }
+
+        20% {
+            transform: translateX(0.5vh);
+        }
+
+        40% {
+            transform: translateX(0.5vh);
+            transform: translateY(-0.5vh);
+        }
+
+        80% {
+            transform: translateY(-0.5vh);
+            transform: translateX(0.5vh);
+        }
     }
