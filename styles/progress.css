@@ -19,6 +19,8 @@ body {
     margin-right: 10px;
   }
 
+/* images for each cell, doesnt work in html idk */
+
   #cell1 {
     background-image: url("../media/P1.png");
     background-size: 100%;
@@ -46,5 +48,10 @@ body {
 
   #cell6 {
     background-image: url("../media/P6.png");
+    background-size: 100%;
+  }
+
+  #cell7 {
+    background-image: url("../media/P7.png");
     background-size: 100%;
   }
