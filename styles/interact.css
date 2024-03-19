@@ -2,6 +2,21 @@ body {
     overflow-x: scroll;
 }
 
+h1 {
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* top text glow animation */
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #55485c;
+    }
+    to {
+      text-shadow: 0 0 20px #FFF0F5 , 0 0 5px #FFF0F5 ;
+    }
+}
+
 .weeks {
     display:flex;
     white-space: nowrap;
