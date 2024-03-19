@@ -12,7 +12,7 @@ body {
     background-image: url("media/starsbg.mp4");
     font-family: "Open Sans", "sans-serif";
     overflow:hidden;
-    cursor:url("media/star.png"), move;
+    cursor:url("media/star.png") 32 32, move;
 }
 
 .back {
@@ -86,22 +86,22 @@ video {
 /* the animation */
 @keyframes gif {
     0% {
-    cursor: url("media/star.png"), auto;
+    cursor: url("media/star.png") 32 32, auto;
     }
     20% {
-    cursor: url("media/star1.png"), auto;
+    cursor: url("media/star1.png") 32 32, auto;
     }
     40% {
-    cursor: url("media/star2.png"), auto;
+    cursor: url("media/star2.png") 32 32, auto;
     }
     60% {
-    cursor: url("media/star3.png"), auto;
+    cursor: url("media/star3.png") 32 32, auto;
     }
     80% {
-    cursor: url("media/star2.png"), auto;
+    cursor: url("media/star2.png") 32 32, auto;
     }
     100% {
-    cursor: url("media/star1.png"), auto;
+    cursor: url("media/star1.png") 32 32, auto;
     }
 }
 
