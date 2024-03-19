@@ -33,9 +33,6 @@ video {
     border-radius: 50vh;
     font-size: 2em;
     text-shadow: 2px 2px 2px rgb(5, 0, 10, 0.7);
-}
-
-.blob {
     text-decoration: none;
     color:lavenderblush;
     padding: 10px;

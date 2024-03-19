@@ -2,12 +2,13 @@ body {
     overflow: scroll;;
 }
 
-.first {
+.images {
     display: flex;
     justify-content: space-around;
 }
 
-.first > img{
+.images > img{
     width: 60vw;
     height: fit-content;
 }
+
