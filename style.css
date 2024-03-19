@@ -69,7 +69,7 @@ video {
 }
 
 /* custom cursor animation from GDES30008 code snippets*/
-.blob:hover {
+#progressblob:hover, #interactblob:hover, #waypostsblob:hover {
     animation: gif 0.4s infinite;
     }
     /* the animation */
@@ -94,68 +94,60 @@ video {
     }
     }
 
-    /* Animation to make blobs move around */
-    @keyframes MoveAround1 {
-        0%, 100% {
-            transform: translateY(0);
-            transform: translateX(0);
-        }
-
-        30% {
-            transform: translateX(0.5vh);
-            transform: translateY(-0.5vh); 
-        }
-
-        45% {
-            transform: translateX(-0.5vh);
-            transform: translateY(-0.5vh);
-        }
-
-        85% {
-            transform: translateY(-0.5vh);
-            transform: translateX(0.5vh);
-        }
+/* Animation to make blobs move around */
+@keyframes MoveAround1 {
+    0%, 100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(0.5vh);
+        transform: translateY(-0.5vh); 
+    }
+    45% {
+        transform: translateX(-0.5vh);
+        transform: translateY(-0.5vh);
+    }
+    85% {
+        transform: translateY(-0.5vh);
+        transform: translateX(0.5vh);
+    }
+}
+@keyframes MoveAround2 {
+    0%, 100% {
+        transform: translateY(0);
+        transform: translateX(0);
     }
 
-    @keyframes MoveAround2 {
-        0%, 100% {
-            transform: translateY(0);
-            transform: translateX(0);
-        }
-    
-        20% {
-            transform: translateX(-0.5vh);
-            transform: translateY(0.5vh); 
-        }
-    
-        40% {
-            transform: translateX(0.5vh);
-            transform: translateY(0.5vh);
-        }
-    
-        80% {
-            transform: translateY(0.5vh);
-            transform: translateX(-0.5vh);
-        }
-        }
-
-    @keyframes MoveAround3 {
-        0%, 100% {
-            transform: translateY(0);
-            transform: translateX(0);
-        }
-
-        20% {
-            transform: translateX(0.5vh);
-        }
-
-        40% {
-            transform: translateX(0.5vh);
-            transform: translateY(-0.5vh);
-        }
-
-        80% {
-            transform: translateY(-0.5vh);
-            transform: translateX(0.5vh);
-        }
+    20% {
+        transform: translateX(-0.5vh);
+        transform: translateY(0.5vh); 
     }
+
+    40% {
+        transform: translateX(0.5vh);
+        transform: translateY(0.5vh);
+    }
+
+    80% {
+        transform: translateY(0.5vh);
+        transform: translateX(-0.5vh);
+    }
+    }
+@keyframes MoveAround3 {
+    0%, 100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0.5vh);
+    }
+    40% {
+        transform: translateX(0.5vh);
+        transform: translateY(-0.5vh);
+    }
+    80% {
+        transform: translateY(-0.5vh);
+        transform: translateX(0.5vh);
+    }
+}
