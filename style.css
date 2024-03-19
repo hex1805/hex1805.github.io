@@ -15,6 +15,18 @@ body {
     cursor:url("media/star.png"), move;
 }
 
+.back {
+    text-decoration: none;
+    color: deeppink;
+    transition: 0.2s ease-in;
+}
+
+.back:hover {
+    animation: gif 0.4s infinite;
+    color: rgb(255, 130, 197);
+    transition: 0.2s ease-in;
+}
+
 video {
     position: absolute;
     top: 0;
@@ -38,8 +50,6 @@ video {
     padding: 10px;
     
 }
-
-
 
 #progressblob {
     background-image: url("media/orbred.png");
@@ -71,9 +81,10 @@ video {
 /* custom cursor animation from GDES30008 code snippets*/
 #progressblob:hover, #interactblob:hover, #waypostsblob:hover {
     animation: gif 0.4s infinite;
-    }
-    /* the animation */
-    @keyframes gif {
+}
+
+/* the animation */
+@keyframes gif {
     0% {
     cursor: url("media/star.png"), auto;
     }
@@ -92,7 +103,7 @@ video {
     100% {
     cursor: url("media/star1.png"), auto;
     }
-    }
+}
 
 /* Animation to make blobs move around */
 @keyframes MoveAround1 {
