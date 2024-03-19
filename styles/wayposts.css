@@ -1,0 +1,8 @@
+body {
+    overflow: scroll;
+}
+
+.entry > img{
+    width: 60vw;
+    height: fit-content;
+}
