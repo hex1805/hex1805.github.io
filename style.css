@@ -36,6 +36,30 @@ video {
     text-decoration: none;
     color:lavenderblush;
     padding: 10px;
+    animation: MoveAround 6s ease-in-out infinite;
+}
+
+/* Animation to make blobs move around */
+@keyframes MoveAround {
+    0%, 100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0.5vh);
+        transform: translateY(-0.5vh); 
+    }
+
+    40% {
+        transform: translateX(-0.5vh);
+        transform: translateY(-0.5vh);
+    }
+
+    80% {
+        transform: translateY(-0.5vh);
+        transform: translateX(0.5vh);
+    }
 }
 
 #progressblob {
