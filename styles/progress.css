@@ -5,10 +5,11 @@ body {
 .images {
     display: flex;
     justify-content: space-around;
+    
 }
 
 .images > img{
-    width: 60vw;
+    max-width: 60vw;
     height: fit-content;
 }
 
